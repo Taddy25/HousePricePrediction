@@ -1,38 +1,64 @@
-# HousePricePrediction
-Predicts house sale prices using Python and linear regression, with data cleaning, visualization, and feature analysis to demonstrate end-to-end data science workflow
+## House Price Prediction Project
 
-House Price Prediction
+This project demonstrates an end-to-end data science workflow using Python to predict house sale prices.
+It covers data cleaning, visualization, and linear regression modeling — skills relevant for entry-level data science roles.
 
-A data science project predicting house sale prices using real-world housing data. Demonstrates end-to-end workflow from data analysis to predictive modeling.
+## Tools Used
 
-Overview
+Python (pandas, matplotlib, seaborn, scikit-learn)
 
-Goal: Predict house sale prices from key property features.
+Google Colab for running Python notebooks
 
-Skills showcased: Data cleaning, exploratory analysis, feature selection, regression modeling, and result evaluation.
+Linear Regression for predictive modeling
 
-Outcome: A working predictive model with visual insights into how features like living area, overall quality, and garage size influence sale price.
+## Project Goals
 
-What I Did
+Load and clean housing dataset.
 
-Data Analysis: Explored trends using scatter plots and correlation heatmaps.
+Explore data relationships and distributions using visualizations:
 
-Data Cleaning: Handled missing values and ensured data consistency.
+Scatter plots (e.g., GrLivArea vs SalePrice)
 
-Modeling: Built a linear regression model to predict sale prices.
+Correlation heatmaps
 
-Evaluation: Compared predicted vs actual values to measure performance.
+Build a simple linear regression model to predict SalePrice from selected features:
 
-Technologies Used
+GrLivArea (above-ground living area)
 
-Python (Pandas, Matplotlib, Seaborn, Scikit-learn)
+OverallQual (overall material and finish quality)
 
-Impact
+GarageCars (garage capacity)
 
-This project demonstrates my ability to:
+Evaluate model performance using mean squared error.
 
-Work with real datasets and clean/preprocess data.
+Dataset Structure
 
-Perform exploratory analysis to identify key factors.
+## Key columns used:
 
-Build and evaluate a predictive model to generate actionable insights.
+SalePrice — target variable (house sale price)
+
+GrLivArea — above-ground living area
+
+OverallQual — overall material and finish quality
+
+GarageCars — number of cars the garage can hold
+
+Other columns are retained for potential analysis but not used in the initial model.
+
+## Key Insights
+
+Higher GrLivArea and OverallQual generally correspond to higher SalePrice.
+
+Missing values are filled with 0 for simplicity in this demonstration.
+
+Linear regression model predicts SalePrice based on selected features.
+
+Performance evaluated using mean squared error (MSE).
+
+## Example Output
+GrLivArea	OverallQual	GarageCars	Actual SalePrice	Predicted SalePrice
+1710	7	2	208500	210000
+1262	6	2	181500	179000
+1786	7	3	223500	220000
+1717	7	2	250000	248000
+2198	8	3	307000	305500
